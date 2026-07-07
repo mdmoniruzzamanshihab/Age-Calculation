@@ -1,28 +1,30 @@
-function calculateAge() {
-    let date1 = document.getElementById("dob").value;
-    let date2 = document.getElementById("calcDate").value;
+const dobInput = document.getElementById("dob");
+const calcDateInput = document.getElementById("calcDate");
+const resultBox = document.getElementById("result");
 
-    if (!date1) {
-        document.getElementById("result").classList.remove("hidden");
-        document.getElementById("result").innerText = "Select Date of Birth";
-        return;
-    }
 
-    let d1 = new Date(date1);
-    let d2 = date2 ? new Date(date2) : new Date();
+calcDateInput.value = new Date().toISOString().split("T")[0];
 
-    if (d1 > d2) {
-        [d1, d2] = [d2, d1];
-    }
+function showResult(message) {
+    resultBox.classList.remove("hidden");
+    resultBox.innerText = message;
+}
 
-    let years = d2.getFullYear() - d1.getFullYear();
-    let months = d2.getMonth() - d1.getMonth();
-    let days = d2.getDate() - d1.getDate();
+function calculateDifference(birthDate, targetDate) {
+    let years = targetDate.getFullYear() - birthDate.getFullYear();
+    let months = targetDate.getMonth() - birthDate.getMonth();
+    let days = targetDate.getDate() - birthDate.getDate();
 
     if (days < 0) {
         months--;
-        let prevMonth = new Date(d2.getFullYear(), d2.getMonth(), 0);
-        days += prevMonth.getDate();
+
+        const previousMonth = new Date(
+            targetDate.getFullYear(),
+            targetDate.getMonth(),
+            0
+        );
+
+        days += previousMonth.getDate();
     }
 
     if (months < 0) {
@@ -30,8 +32,33 @@ function calculateAge() {
         months += 12;
     }
 
-    let resultBox = document.getElementById("result");
-    resultBox.classList.remove("hidden");
-    resultBox.innerText =
-        years + " years " + months + " months " + days + " days";
+    return {
+        years,
+        months,
+        days
+    };
+}
+
+function calculateAge() {
+    const dob = dobInput.value;
+    const calcDate = calcDateInput.value;
+
+    if (!dob) {
+        showResult("Please select your Date of Birth.");
+        return;
+    }
+
+    const birthDate = new Date(dob);
+    const targetDate = new Date(calcDate);
+
+    if (birthDate > targetDate) {
+        showResult("Date of Birth cannot be later than the calculation date.");
+        return;
+    }
+
+    const age = calculateDifference(birthDate, targetDate);
+
+    showResult(
+        `${age.years} years ${age.months} months ${age.days} days`
+    );
 }
