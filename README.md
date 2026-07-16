@@ -31,5 +31,3 @@ This project allows users to calculate their exact age by selecting a Date of Bi
 - HTML5
 - Tailwind CSS
 - Vanilla JavaScript
-- Font Awesome
-- Google Fonts (Geist)
