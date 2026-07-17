@@ -23,6 +23,7 @@ This project allows users to calculate their exact age by selecting a Date of Bi
  🎨 Modern glassmorphism UI
  💡 Clean and lightweight code
  🚀 No frameworks or build tools required
+ 🎬 Smooth Animation
 
 
 
