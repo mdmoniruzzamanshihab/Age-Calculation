@@ -6,8 +6,30 @@ const resultBox = document.getElementById("result");
 calcDateInput.value = new Date().toISOString().split("T")[0];
 
 function showResult(message) {
+
     resultBox.classList.remove("hidden");
-    resultBox.innerText = message;
+
+    resultBox.innerHTML = `
+        <div class="flex flex-col items-center gap-3">
+
+            
+
+            <h2 class="text-xl font-bold text-gray-800">
+                Your Exact Age
+            </h2>
+
+            <p class="text-2xl font-bold text-teal-600">
+                ${message}
+            </p>
+
+        </div>
+    `;
+
+  
+
+    resultBox.classList.remove("result-animation");
+    void resultBox.offsetWidth;
+    resultBox.classList.add("result-animation");
 }
 
 function calculateDifference(birthDate, targetDate) {
