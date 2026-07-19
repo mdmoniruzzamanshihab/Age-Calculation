@@ -19,6 +19,11 @@
     transform: translateY(20px);
     animation: fadeSlide 1s ease-out forwards;
 }
+.sub-title{
+     opacity: 0;
+    transform: translateY(20px);
+    animation: subFadeSlide 1s ease-out forwards;
+}
 
 @keyframes fadeSlide {
     from {
@@ -30,6 +35,15 @@
         transform: translateY(0);
     }
 }
+@keyframes subFadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
     </style>
 </head>
 
@@ -44,6 +58,9 @@
     <i class="fa-solid fa-cake-candles text-teal-600 text-xl sm:text-2xl md:text-3xl"></i>
     Age Calculator
 </h1>
+<p class="sub-title text-gray-500 mt-2">
+    Calculate your exact age in years, months, days, hours and minutes.
+</p>
         </div>
 
         <div class="space-y-4 sm:space-y-5 md:space-y-6">
