@@ -271,4 +271,3 @@ If you'd like to improve the project:
 
 
 
-If you found this project helpful, consider giving it a **⭐ Star** on GitHub.
