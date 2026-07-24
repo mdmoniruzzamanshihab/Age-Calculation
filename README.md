@@ -267,7 +267,7 @@ If you'd like to improve the project:
 3. Commit your changes
 4. Open a Pull Request
 
----
+Thank You!
 
 
 
