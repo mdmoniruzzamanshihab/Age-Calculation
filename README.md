@@ -252,7 +252,7 @@ This project is useful for:
 - 🌍 Multi-language support
 - ♈ Zodiac sign
 - 🚀 Share result
-- 🎊 Birthday confetti
+
 
 ---
 
