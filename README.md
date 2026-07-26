@@ -250,7 +250,6 @@ This project is useful for:
 - 📋 Copy result
 - 📄 Export as PDF
 - 🌍 Multi-language support
-- ♈ Zodiac sign
 - 🚀 Share result
 
 
