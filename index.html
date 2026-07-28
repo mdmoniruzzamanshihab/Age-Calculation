@@ -103,11 +103,57 @@
                 transform: rotate(360deg);
             }
         }
+        .balloon{
+    position:absolute;
+    bottom:-120px;
+    animation: floatBalloon 14s linear infinite;
+    opacity:.85;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,.2));
+}
+
+@keyframes floatBalloon{
+    0%{
+        transform:translateY(0) translateX(0) rotate(-5deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    25%{
+        transform:translateY(-25vh) translateX(-15px) rotate(5deg);
+    }
+
+    50%{
+        transform:translateY(-50vh) translateX(15px) rotate(-5deg);
+    }
+
+    75%{
+        transform:translateY(-75vh) translateX(-10px) rotate(4deg);
+    }
+
+    100%{
+        transform:translateY(-120vh) translateX(10px) rotate(-4deg);
+        opacity:0;
+    }
+}
     </style>
 </head>
 
 <body
-    class="min-h-screen bg-gradient-to-br from-teal-100 via-blue-100 to-indigo-200 flex items-center justify-center px-4 sm:px-6 md:px-8">
+    class="relative overflow-hidden min-h-screen bg-gradient-to-br from-teal-100 via-blue-100 to-indigo-200 flex items-center justify-center px-4 sm:px-6 md:px-8">
+
+<div class="pointer-events-none absolute inset-0 overflow-hidden">
+
+    <div class="balloon left-[5%] text-6xl">🎈</div>
+    <div class="balloon left-[18%] text-5xl" style="animation-delay:2s;">🎈</div>
+    <div class="balloon left-[35%] text-7xl" style="animation-delay:4s;">🎈</div>
+    <div class="balloon left-[55%] text-5xl" style="animation-delay:1s;">🎈</div>
+    <div class="balloon left-[72%] text-6xl" style="animation-delay:3s;">🎈</div>
+    <div class="balloon left-[90%] text-5xl" style="animation-delay:5s;">🎈</div>
+
+</div>
     <div class="card-wrapper">
         <div class="bg-white/60 backdrop-blur-2xl rounded-3xl p-1 sm:p-1 md:p-1 w-full max-w-lg border border-white/40">
 
