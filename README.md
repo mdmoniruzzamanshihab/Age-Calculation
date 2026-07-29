@@ -80,7 +80,7 @@ This project is ideal for:
 
 
 
----
+
 
 # ⚡ Performance & Optimization
 
@@ -321,7 +321,7 @@ If you would like to improve this project:
 
 Suggestions, bug reports, and feature requests are appreciated.
 
----
+
 
 
 
