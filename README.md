@@ -331,4 +331,4 @@ If you found this project helpful, consider giving it a ⭐ on GitHub.
 
 It helps others discover the project and motivates future improvements.
 
-Thank you for visiting! 
+! 
