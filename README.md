@@ -327,7 +327,7 @@ Suggestions, bug reports, and feature requests are appreciated.
 
 # ⭐ Support
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+If you found this project helpful, consider giving it a star on GitHub.
 
 It helps others discover the project and motivates future improvements.
 
