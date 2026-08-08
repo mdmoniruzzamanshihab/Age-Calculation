@@ -319,8 +319,9 @@ If you would like to improve this project:
 4. Push your branch
 5. Open a Pull Request
 
-Suggestions, bug reports, and feature requests are appreciated.
-Thanks!
+Suggestions, bug reports, and feature requests are highly appreciated.
+Thank You!
+
 
 
 
