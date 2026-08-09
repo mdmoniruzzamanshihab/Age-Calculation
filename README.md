@@ -222,7 +222,7 @@ Includes:
 
 # 🔒 Validation
 
-The application prevents:
+The mentioned application prevents:
 
 - Empty Date of Birth
 - Future birth dates
