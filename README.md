@@ -216,7 +216,7 @@ Includes:
 - Soft Shadows
 - Smooth Fade Animation
 - Slide-Up Result Animation
-- Modern Typography
+
 
 ---
 
