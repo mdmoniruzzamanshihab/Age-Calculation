@@ -231,7 +231,7 @@ The mentioned application prevents:
 
 ---
 
-# 📱 Responsiveness
+# 📱 Responsiveness Design
 
 Successfully tested on:
 
