@@ -20,7 +20,7 @@ Age Calculator is a frontend web application that determines a person's exact ag
 
 If no calculation date is selected, the application automatically uses today's date.
 
-The project emphasizes:
+The project emphasizes on:
 
 - Accurate calculations
 - Clean UI
