@@ -22,7 +22,7 @@ If no calculation date is selected, the application automatically uses today's d
 
 The project emphasizes on:
 
-- Accurate calculations
+
 - Clean UI
 - Responsive design
 - Maintainable code
