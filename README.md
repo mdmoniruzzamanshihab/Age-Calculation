@@ -16,7 +16,7 @@ This application accurately calculates the difference between two dates in **Yea
 
 # 📖 Overview
 
-Age Calculator is a frontend web application that determines a person's exact age based on a selected **Date of Birth** and **Calculation Date**.
+Age Calculator is a frontend web application that determines exact age based on a selected **Date of Birth** and **Calculation Date**.
 
 If no calculation date is selected, the application automatically uses today's date.
 
